@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	let randomizeButton = document.querySelector('.randomizeButton')
 
 	sizeSlider.addEventListener('input', onChangeSlider)
-	let boxNums = document.querySelectorAll('.boxNum');
 
 	function onChangeSlider(){
+		let boxNums = document.querySelectorAll('.boxNum');
 		for (let i = 0; i < boxNums.length; i++){
 			//console.log(sizeSlider.value)
 			console.log(boxNums[i].style.width);
